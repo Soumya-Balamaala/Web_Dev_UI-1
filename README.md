@@ -1,7 +1,7 @@
 
 # Hi, I'm Soumya ! 👋
 
-Since I was very pasionate about Frontend development, I have learn't
+Since I was very passionate about Frontend development, I have learn't
 programming languages like HTML5, CSS3, REACT JS, BOOTSTRAP etc.
 
 
