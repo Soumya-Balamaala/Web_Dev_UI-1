@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+/*..................FONTS.............*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/*............................................*/
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav_ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  left: 20px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 770px) {
+  .Nav_ul {
+    position: fixed;
+    flex-direction: column;
+    top: 80px;
+    justify-content: center;
+    width: 100%;
+    line-height: 50px;
+    left: -100%;
+    text-align: center;
+    background: White;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    border-top: 0.5px solid #ababab;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Nav_ul.open {
+    left: 0;
+    transition: all 0.5s ease-in-out;
   }
 }
